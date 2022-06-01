@@ -1,0 +1,28 @@
+What is Repository Pattern
+
+Repository Pattern is an abstraction of the Data Access Layer. 
+It hides the details of how exactly the data is saved or retrieved from the underlying data source. 
+The details of how the data is stored and retrieved is in the respective repository. 
+For example, you may have a repository that stores and retrieves data from an in-memory collection. 
+You may have another repository that stores and retrieves data from a database like SQL Server.
+
+
+Benefits of Repository Pattern
+*The code is cleaner, and easier to reuse and maintain.
+
+*Enables us to create loosely coupled systems. For example, 
+ if we want our application to work with oracle instead of sql server, 
+ implement an OracleRepository that knows how to read and write to 
+ Oracle database and register OracleRepository with the dependency injection system.
+
+*In an unit testing project, it is easy to replace a real repository with a fake implementation for testing.
+
+
+
+
+
+
+
+
+
+
